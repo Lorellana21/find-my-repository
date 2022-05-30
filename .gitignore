@@ -7,6 +7,8 @@
 
 # testing
 /coverage
+
+# cypress
 instrumented/
 .nyc_output/
 cypress-coverage/
