@@ -21,11 +21,26 @@
     "build": "react-scripts build",
     "test": "jest --coverage --passWithNoTests",
     "eject": "react-scripts eject",
-    "lint": "semistandard --fix"
+    "lint": "semistandard --fix",
+    "cy:open": "cypress open",
+    "cy:test": "cypress run",
+    "instrumented": "nyc instrument --compact=false src instrumented",
+    "clean:cov": "rm -rf coverage cypress-coverage .nyc_output instrumented",
+    "report:cy:cov": "istanbul report --include cypress-coverage/coverage.json --dir cypress-coverage lcov html text",
+    "test:ci": "npm run clean:cov && npm run instrumented && start-server-and-test start http-get://localhost:3001 cy:test && npm run report:cy:cov",
+    "cov:merge": "istanbul-merge --out coverage.json coverage/coveragefinal.json cypress-coverage/coverage-final.json",
+    "report:cov": "istanbul report --include coverage.json --dir coverage lcov html text",
+    "test:all": "npm run clean:cov && npm run test && npm run test:ci && npm run cov:merge && npm run report:cov"
+  },
+  "nyc": {
+    "report-dir": "cypress-coverage",
+    "exclude": [
+      "instrumented/**"
+    ]
   },
   "commitlint": {
     "extends": "@commitlint/config-conventional"
-    },
+  },
   "semistandard": {
     "globals": [
       "describe",
@@ -65,12 +80,20 @@
     "@babel/preset-typescript": "^7.17.12",
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
+    "@cypress/code-coverage": "^3.10.0",
+    "@testing-library/cypress": "^8.0.2",
     "@testing-library/dom": "^8.13.0",
     "@types/jest": "^27.5.1",
     "babel-jest": "^28.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "cypress": "^9.7.0",
     "husky": "^8.0.1",
+    "istanbul": "^0.4.5",
+    "istanbul-merge": "^1.1.1",
     "jest": "^28.1.0",
+    "nyc": "^15.1.0",
     "semistandard": "^16.0.1",
+    "start-server-and-test": "^1.14.0",
     "ts-jest": "^28.0.3"
   }
 }
