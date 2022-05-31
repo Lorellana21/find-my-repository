@@ -9,6 +9,7 @@
     "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "axios": "^0.27.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -24,14 +25,13 @@
     "lint": "semistandard --fix",
     "cy:open": "cypress open",
     "cy:test": "cypress run",
-    "test:ci": "npm run clean:cov && npm run instrumented && start-server-and-test start http-get://localhost:3000 cy:test && npm run report:cy:cov",
     "instrumented": "nyc instrument --compact=false src instrumented",
     "clean:cov": "rm -rf coverage cypress-coverage .nyc_output instrumented",
     "report:cy:cov": "istanbul report --include cypress-coverage/coverage.json --dir cypress-coverage lcov html text",
+    "test:ci": "npm run clean:cov && npm run instrumented && start-server-andtest start http-get://localhost:3000 cy:test && npm run report:cy:cov",
     "cov:merge": "istanbul-merge --out coverage.json coverage/coveragefinal.json cypress-coverage/coverage-final.json",
     "report:cov": "istanbul report --include coverage.json --dir coverage lcov html text",
-    "test:all": "npm run clean:cov && npm run test && npm run test:ci && npm run cov:merge && npm run report:cov" 
-
+    "test:all": "npm run clean:cov && npm run test && npm run test:ci && npm run cov:merge && npm run report:cov"
   },
   "nyc": {
     "report-dir": "cypress-coverage",
