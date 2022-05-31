@@ -1,11 +1,14 @@
 
 import { useState, useEffect } from 'react';
 import getApiData from "../src/services/getDataFromApi";
-import './App.css';
+import "./styles/App.scss";
+import data from "./fixtures/user.json";
+import User from './components/User';
 
 
 const App = () => {
 
+  const [user, setUser] = useState([]);
   const [repos, setRepos] = useState([]);
   const [filterName, setFilterName] = useState("");
 
@@ -25,10 +28,10 @@ useEffect(() => {
     <div className="App">
       <header className="App-header">
         
-        <p>Hola
-        </p>
-        
       </header>
+      <main>
+        <User></User>
+      </main>
     </div>
   );
 }

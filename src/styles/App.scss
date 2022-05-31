@@ -1,0 +1,17 @@
+@import "./core/reset.scss";
+@import "./core/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.App{
+    min-width: 80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 2rem;
+    border: solid black 2px;
+
+}
+
+

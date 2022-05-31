@@ -1,5 +1,5 @@
 const getApiData = () => {
-    return fetch("//api.github.com/users/lukas/repos")
+    return fetch("https://api.github.com/users/Lorellana21/repos")
       .then((response) => response.json())
       .then((data) => {
 
