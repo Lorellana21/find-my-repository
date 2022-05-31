@@ -6,7 +6,22 @@ import "./styles/App.scss";
 import User from "./components/User";
 
 
+let name: string;
+let age: number | string;//a union
+let isStudent: boolean;
+let hobbies: string[];
+let role: [number, string]; //role= [5, "edad"]
 
+type Person = {
+  name: string;
+  age?: number;
+}
+let person: Object;//no recomendada
+function printName(name: string){
+  console.log(name)
+}
+printName("lore");
+let printNombre: (name: string) => void;
 
 const App = () => {
 
