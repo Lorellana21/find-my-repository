@@ -25,12 +25,20 @@ useEffect(() => {
 
 
   return (
-    <div className="App">
+    <div className="container">
       <header className="App-header">
         
       </header>
       <main>
         <User></User>
+        <div className='wrapper'>
+
+
+        {/* navbar
+        filter
+        <ReposList></ReposList>
+        <RepoItem></RepoItem> */}
+        </div>
       </main>
     </div>
   );

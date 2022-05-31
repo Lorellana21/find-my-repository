@@ -3,20 +3,22 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    box-shadow: 0 5px 15px 0px rgba(14, 197, 23, 0.4);
+   animation: tracking-in-expand 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
  }
- 
- .title {
-    font-family: 'Roboto', sans-serif;
+ .title{
+    color: black;
  }
- 
- 
- 
- 
  .subtitle {
     font-family: 'Open Sans', sans-serif;   
     font-weight: 600;
     padding: .5rem 0;
     color: #545454;
+ }
+ .bio{
+    color: black;
+    text-align: justify;
  }
  
  .size--l {
@@ -28,29 +30,11 @@
     font-size: 2rem;
     font-weight: 700;
  }
- .sport {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-bottom: 5rem;
-    margin-bottom: 5rem;
-    border-bottom: 1px solid #000;
- }
- .sport__header {
-    margin-bottom: 2rem;
-    border-bottom: 3px solid #00b5ac;
- }
- 
- .sport__header .title {
-    display: inline-flex;
-    padding: 1.5rem 3rem 1.5rem 1rem;
-    border-bottom: 5px solid #00b5ac;
- }
  
  .highlight {
     display: flex;
     flex-direction: column-reverse;
-    max-width: 400px;
+    max-width: 300px;
     padding: 0 1rem 2rem 1rem;
  }
  
@@ -60,9 +44,8 @@
  
  .highlight__header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
  }
- 
  
  .highlight__figure {
     position: relative;
@@ -72,7 +55,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid #f1f1f1;
+    border-radius: 8rem;
  }
  
  .highlight__caption {
@@ -81,12 +64,13 @@
     left: -.5rem;
     padding: .5rem;
     color: #FFF;
-    background: #084544;
+    background: #545454;
  }
  
  .highlight__footer {
     display: flex;
-    align-items: center;
+    align-items:flex-start;
+    flex-direction: column;
     justify-content: space-between;
     order: -1;
     padding: 1rem 0;
@@ -95,25 +79,28 @@
  
  .highlight__location {
     font-size: .75rem;
+    font-weight: bold;
+    color: black;
  }
  
  .highlight__email {
+   font-size: .75rem;
     font-weight: bold;
     color: #084544;
     text-decoration: none;
  }
- 
- .highlight__messgges::before {
-    content: " ";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin-right: .5rem;
-    border-radius: 100%;
-    background: #C6C6C6;
-    transition: background .3s ease;
+ @keyframes tracking-in-expand {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
+   }
+   40% {
+     opacity: 0.6;
+   }
+   100% {
+     opacity: 1;
+   }
  }
+
  
- .highlight__messgges:hover::before {
-    background: #084544;
- }
+ 
