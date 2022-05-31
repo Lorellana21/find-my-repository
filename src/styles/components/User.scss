@@ -19,6 +19,7 @@
  .bio{
     color: black;
     text-align: justify;
+    margin-bottom: 1rem;
  }
  
  .size--l {
@@ -60,11 +61,12 @@
  
  .highlight__caption {
     position: absolute;
-    top:-.5rem;
-    left: -.5rem;
+    bottom: 1rem;
+    right: -.5rem;
     padding: .5rem;
     color: #FFF;
     background: #545454;
+    border-radius: 2rem;
  }
  
  .highlight__footer {
@@ -101,6 +103,7 @@
      opacity: 1;
    }
  }
+ 
 
  
  

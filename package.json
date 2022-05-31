@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -35,7 +36,9 @@
     "test:ci": "npm run clean:cov && npm run instrumented && start-server-andtest start http-get://localhost:3000 cy:test && npm run report:cy:cov",
     "cov:merge": "istanbul-merge --out coverage.json coverage/coveragefinal.json cypress-coverage/coverage-final.json",
     "report:cov": "istanbul report --include coverage.json --dir coverage lcov html text",
-    "test:all": "npm run clean:cov && npm run test && npm run test:ci && npm run cov:merge && npm run report:cov"
+    "test:all": "npm run clean:cov && npm run test && npm run test:ci && npm run cov:merge && npm run report:cov",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "nyc": {
     "report-dir": "cypress-coverage",
@@ -67,6 +70,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -86,10 +99,21 @@
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
     "@cypress/code-coverage": "^3.10.0",
+    "@storybook/addon-actions": "^6.5.6",
+    "@storybook/addon-essentials": "^6.5.6",
+    "@storybook/addon-interactions": "^6.5.6",
+    "@storybook/addon-links": "^6.5.6",
+    "@storybook/builder-webpack5": "^6.5.6",
+    "@storybook/manager-webpack5": "^6.5.6",
+    "@storybook/node-logger": "^6.5.6",
+    "@storybook/preset-create-react-app": "^4.1.1",
+    "@storybook/react": "^6.5.6",
+    "@storybook/testing-library": "^0.0.11",
     "@testing-library/cypress": "^8.0.2",
     "@testing-library/dom": "^8.13.0",
     "@types/jest": "^27.5.1",
     "babel-jest": "^28.1.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "cypress": "^9.7.0",
     "husky": "^8.0.1",
@@ -97,8 +121,10 @@
     "istanbul-merge": "^1.1.1",
     "jest": "^28.1.0",
     "nyc": "^15.1.0",
+    "prop-types": "^15.8.1",
     "semistandard": "^16.0.1",
     "start-server-and-test": "^1.14.0",
-    "ts-jest": "^28.0.3"
+    "ts-jest": "^28.0.3",
+    "webpack": "^5.72.1"
   }
 }

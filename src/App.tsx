@@ -2,8 +2,10 @@
 import { useState, useEffect } from 'react';
 import getApiData from "../src/services/getDataFromApi";
 import "./styles/App.scss";
-import data from "./fixtures/user.json";
-import User from './components/User';
+//import data from "./fixtures/user.json";
+import User from "./components/User";
+
+
 
 
 const App = () => {
@@ -25,12 +27,17 @@ useEffect(() => {
 
 
   return (
+    <>
     <div className="container">
       <header className="App-header">
         
       </header>
       <main>
         <User></User>
+        
+
+        
+
         <div className='wrapper'>
 
 
@@ -41,9 +48,8 @@ useEffect(() => {
         </div>
       </main>
     </div>
+    </>
   );
 }
 
 export default App;
-
-//https://api.github.com/users

@@ -1,10 +1,15 @@
 import "../styles/components/User.scss";
+import MarkunreadIcon from "@mui/icons-material/Markunread";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
+import MyButton from "../components/MyButton/MyButton";
 
 const User = () => {
   return (
     <>
       <div className="wrapper">
         <article className="highlight">
+          <MyButton size="large">Edit profile</MyButton>
           <header className="highlight__header">
             <h2 className="title size--m">Lorena Orellana</h2>
             <p className="subtitle">Lorellana21</p>
@@ -22,14 +27,19 @@ const User = () => {
               alt="Lorena Orellana"
             ></img>
             <figcaption className="highlight__caption">
-               :) Edit status
+              <InsertEmoticonIcon />
+              Edit status
             </figcaption>
           </figure>
-          {/* buton
-          followers y following */}
+
           <footer className="highlight__footer">
-            <span className="highlight__location">Sevilla</span>
-            <span className="highlight__email">email</span>
+            <span className="highlight__location">
+              <LocationOnIcon></LocationOnIcon>
+              Sevilla
+            </span>
+            <span className="highlight__email">
+              <MarkunreadIcon /> lorellana.ordonez@gmail.com
+            </span>
           </footer>
         </article>
       </div>
