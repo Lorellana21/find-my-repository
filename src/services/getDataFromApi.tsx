@@ -3,7 +3,7 @@
 async function getDataFromApi() {
   try {
     let githubResponse = await fetch(
-      `https://api.github.com/users/Lorellana21/repos`
+      "//rickandmortyapi.com/api/character"
     );
     let githubRepos = await githubResponse.json();
     return githubRepos;
@@ -15,7 +15,9 @@ async function getDataFromApi() {
       };
   } catch (err) {
     console.log(err);
+    
   }
 }
 
 export default getDataFromApi;
+//https://api.github.com/users/Lorellana21/repos

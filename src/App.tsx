@@ -1,33 +1,28 @@
 
 import { useState, useEffect } from 'react';
-import getApiData from "../src/services/getDataFromApi";
+import getApiData from "./services/getDataFromApi";
 import "./styles/App.scss";
-//import data from "./fixtures/user.json";
+import userData from "./fixtures/user.json";
+import reposData from "./fixtures/repos.json";
 import User from "./components/User";
 
 
-let name: string;
-let age: number | string;//a union
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string]; //role= [5, "edad"]
-
-type Person = {
-  name: string;
-  age?: number;
-}
-let person: Object;//no recomendada
-function printName(name: string){
-  console.log(name)
-}
-printName("lore");
-let printNombre: (name: string) => void;
+// interface UserData  {
+//   name: string
+//   login: string
+//   bio: string
+//   avatar_url: string
+//   location: string
+//   followers: number
+//   following: number
+// }
 
 const App = () => {
+  
+  const [user, setUser] = useState<object>({})
+  const [repos, setRepos] = useState(reposData);
+  const [filterName, setFilterName] = useState<string>("");
 
-  const [user, setUser] = useState([]);
-  const [repos, setRepos] = useState([]);
-  const [filterName, setFilterName] = useState("");
 
   
 useEffect(() => {
@@ -37,10 +32,6 @@ useEffect(() => {
     });
 }, []);
 
-
-
-
-
   return (
     <>
     <div className="container">
@@ -48,19 +39,8 @@ useEffect(() => {
         
       </header>
       <main>
-        <User></User>
+        <User {...userData}></User>
         
-
-        
-
-        <div className='wrapper'>
-
-
-        {/* navbar
-        filter
-        <ReposList></ReposList>
-        <RepoItem></RepoItem> */}
-        </div>
       </main>
     </div>
     </>

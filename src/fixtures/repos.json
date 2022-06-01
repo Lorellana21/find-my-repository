@@ -1,0 +1,302 @@
+[
+    {
+        "name": "audio-super-res",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/audio-super-res",
+        "updated": "2018-11-11T22:27:27Z",
+        "language": "Python",
+        "description": "Audio super resolution using neural networks",
+        "stargazers": "https://api.github.com/repos/lukas/audio-super-res/stargazers",
+        "forks": 1
+    },
+    {
+        "name": "basic-yolo-keras",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/basic-yolo-keras",
+        "updated": "2018-02-22T02:52:31Z",
+        "language": "Jupyter Notebook",
+        "description": "Easy training on custom dataset. Various backends (MobileNet and SqueezeNet) supported. A YOLO demo to detect raccoon run entirely in brower is accessible at https://git.io/vF7vI (not on Windows).",
+        "stargazers": "https://api.github.com/repos/lukas/basic-yolo-keras/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "car-project",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/car-project",
+        "updated": "2018-07-27T13:08:20Z",
+        "language": null,
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/car-project/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "catz",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/catz",
+        "updated": "2019-05-13T01:21:29Z",
+        "language": "Python",
+        "description": "A machine learning contest to predict the behavior of catz",
+        "stargazers": "https://api.github.com/repos/lukas/catz/stargazers",
+        "forks": 2
+    },
+    {
+        "name": "colorizer",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/colorizer",
+        "updated": "2020-12-16T14:37:24Z",
+        "language": "Python",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/colorizer/stargazers",
+        "forks": 17
+    },
+    {
+        "name": "container-demo",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/container-demo",
+        "updated": "2018-02-18T21:22:39Z",
+        "language": "HTML",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/container-demo/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "demo",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/demo",
+        "updated": "2018-02-18T21:22:43Z",
+        "language": "Python",
+        "description": "ML Demo",
+        "stargazers": "https://api.github.com/repos/lukas/demo/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "facerec",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/facerec",
+        "updated": "2020-02-29T07:56:10Z",
+        "language": "Python",
+        "description": "Face recognition using amazon's Rekognition service",
+        "stargazers": "https://api.github.com/repos/lukas/facerec/stargazers",
+        "forks": 15
+    },
+    {
+        "name": "face_classification",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/face_classification",
+        "updated": "2020-12-16T14:37:35Z",
+        "language": "Python",
+        "description": "Real-time face detection and emotion/gender classification using fer2013/imdb datasets with a keras CNN model and openCV.",
+        "stargazers": "https://api.github.com/repos/lukas/face_classification/stargazers",
+        "forks": 2
+    },
+    {
+        "name": "heater",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/heater",
+        "updated": "2020-12-16T14:37:23Z",
+        "language": "Python",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/heater/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "hyperband",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/hyperband",
+        "updated": "2018-02-28T01:00:00Z",
+        "language": "Python",
+        "description": "Tuning hyperparams fast with Hyperband",
+        "stargazers": "https://api.github.com/repos/lukas/hyperband/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "keras",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/keras",
+        "updated": "2021-11-12T11:23:39Z",
+        "language": "Python",
+        "description": "Deep Learning for humans",
+        "stargazers": "https://api.github.com/repos/lukas/keras/stargazers",
+        "forks": 5
+    },
+    {
+        "name": "keras-audio",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/keras-audio",
+        "updated": "2020-12-16T14:37:11Z",
+        "language": "Python",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/keras-audio/stargazers",
+        "forks": 16
+    },
+    {
+        "name": "Keras-FCN-1",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/Keras-FCN-1",
+        "updated": "2018-02-18T21:22:57Z",
+        "language": "Python",
+        "description": "Keras-tensorflow implementation of Fully Convolutional Networks for Semantic Segmentation（Unfinished）",
+        "stargazers": "https://api.github.com/repos/lukas/Keras-FCN-1/stargazers",
+        "forks": 1
+    },
+    {
+        "name": "lassen",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/lassen",
+        "updated": "2018-02-18T21:23:01Z",
+        "language": "Python",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/lassen/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "lukas.github.io",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/lukas.github.io",
+        "updated": "2018-02-18T21:23:06Z",
+        "language": "HTML",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/lukas.github.io/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "mailfactory",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/mailfactory",
+        "updated": "2019-08-13T13:27:05Z",
+        "language": "Ruby",
+        "description": "Create MIME email messages with multiple body parts and attachments in Ruby",
+        "stargazers": "https://api.github.com/repos/lukas/mailfactory/stargazers",
+        "forks": 3
+    },
+    {
+        "name": "Manual",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/Manual",
+        "updated": "2018-08-14T20:55:59Z",
+        "language": null,
+        "description": "You were probably looking for our website... this is it. We moved our website here, so you can see the insides of how we work.",
+        "stargazers": "https://api.github.com/repos/lukas/Manual/stargazers",
+        "forks": 1
+    },
+    {
+        "name": "ml-class",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/ml-class",
+        "updated": "2022-05-28T02:55:56Z",
+        "language": "Jupyter Notebook",
+        "description": "Machine learning lessons and teaching projects designed for engineers",
+        "stargazers": "https://api.github.com/repos/lukas/ml-class/stargazers",
+        "forks": 1029
+    },
+    {
+        "name": "models",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/models",
+        "updated": "2020-01-09T08:20:13Z",
+        "language": "Python",
+        "description": "Models and examples built with TensorFlow",
+        "stargazers": "https://api.github.com/repos/lukas/models/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "pachyderm",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/pachyderm",
+        "updated": "2020-12-16T14:37:08Z",
+        "language": null,
+        "description": "Reproducible Data Science at Scale!",
+        "stargazers": "https://api.github.com/repos/lukas/pachyderm/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "pytorch-yolo2",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/pytorch-yolo2",
+        "updated": "2020-12-16T14:37:29Z",
+        "language": "Python",
+        "description": "Convert https://pjreddie.com/darknet/yolo/ into pytorch",
+        "stargazers": "https://api.github.com/repos/lukas/pytorch-yolo2/stargazers",
+        "forks": 2
+    },
+    {
+        "name": "react-vis",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/react-vis",
+        "updated": "2018-03-09T22:53:58Z",
+        "language": "JavaScript",
+        "description": "Data-Visualization oriented components",
+        "stargazers": "https://api.github.com/repos/lukas/react-vis/stargazers",
+        "forks": 1
+    },
+    {
+        "name": "rl-experiments",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/rl-experiments",
+        "updated": "2019-07-10T04:31:53Z",
+        "language": "Python",
+        "description": "some reinforcement learning experiments",
+        "stargazers": "https://api.github.com/repos/lukas/rl-experiments/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "robot",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/robot",
+        "updated": "2022-04-14T16:28:59Z",
+        "language": "Python",
+        "description": "Simple library for controlling a raspberry pi based robot",
+        "stargazers": "https://api.github.com/repos/lukas/robot/stargazers",
+        "forks": 55
+    },
+    {
+        "name": "smile",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/smile",
+        "updated": "2018-04-24T14:52:37Z",
+        "language": "Python",
+        "description": "Smile Classifier",
+        "stargazers": "https://api.github.com/repos/lukas/smile/stargazers",
+        "forks": 11
+    },
+    {
+        "name": "sonnet",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/sonnet",
+        "updated": "2020-12-16T14:37:18Z",
+        "language": "Python",
+        "description": "TensorFlow-based neural network library",
+        "stargazers": "https://api.github.com/repos/lukas/sonnet/stargazers",
+        "forks": 2
+    },
+    {
+        "name": "test-vega",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/test-vega",
+        "updated": "2020-12-16T14:37:20Z",
+        "language": "Jupyter Notebook",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/test-vega/stargazers",
+        "forks": 0
+    },
+    {
+        "name": "vision-project",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/vision-project",
+        "updated": "2020-12-16T14:37:09Z",
+        "language": "Python",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/vision-project/stargazers",
+        "forks": 77
+    },
+    {
+        "name": "yelp-project",
+        "visibility": "public",
+        "url": "https://api.github.com/repos/lukas/yelp-project",
+        "updated": "2018-03-22T18:38:12Z",
+        "language": "Python",
+        "description": null,
+        "stargazers": "https://api.github.com/repos/lukas/yelp-project/stargazers",
+        "forks": 4
+    }
+]
