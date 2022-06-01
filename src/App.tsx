@@ -39,7 +39,13 @@ useEffect(() => {
         
       </header>
       <main>
-        <User {...userData}></User>
+      
+        <User {...userData}/>
+        
+        <p>holaaaaa</p>
+
+      
+        
         
       </main>
     </div>

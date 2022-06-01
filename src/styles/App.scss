@@ -11,6 +11,7 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 .container{
     min-width: 80vw;
@@ -21,7 +22,12 @@
     min-height: 100vh;
     padding: 2rem;
     border: solid black 2px;
-
+    color: black;
 }
+// main{
+//   display: flex;
+//   flex-flow: row;
+
+// }
 
 
