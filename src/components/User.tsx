@@ -2,9 +2,12 @@ import "../styles/components/User.scss";
 import MarkunreadIcon from "@mui/icons-material/Markunread";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
-//import InsertEmoticon from "@mui/icons-material";
+import InsertEmoticon from "@mui/icons-material";
 //import MyButton from "./MyButton/MyButton";
-import React, { FC } from 'react';
+import React, { FC } from "react";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import PeopleIcon from "@mui/icons-material/People";
 
 export type UserData = {
   name: string;
@@ -14,21 +17,33 @@ export type UserData = {
   location: string;
   followers: number;
   following: number;
-}
+  email: string;
+};
 
-const User: React.FC<UserData> = ({name, login, bio, avatar_url, location, followers, following}) => {
-  console.log(name);
+const User: React.FC<UserData> = ({
+  name,
+  login,
+  bio,
+  avatar_url,
+  location,
+  followers,
+  following,
+  email,
+}) => {
   return (
     <>
       <div className="wrapper">
         <article className="highlight">
-           {/* <MyButton size="large">Edit profile</MyButton>  */}
+          <Stack spacing={8} direction="row">
+            <Button fullWidth={true} size="large" variant="contained">
+              Edit profile
+            </Button>
+          </Stack>
+          {/* <MyButton size="large">Edit profile</MyButton>  */}
           <header className="highlight__header">
             <h2 className="title size--m">{name}</h2>
             <p className="subtitle">{login}</p>
-            <p className="bio">
-              {bio}
-            </p>
+            <p className="bio">{bio}</p>
           </header>
           <figure className="highlight__figure">
             <img
@@ -42,22 +57,19 @@ const User: React.FC<UserData> = ({name, login, bio, avatar_url, location, follo
               Edit status
             </figcaption>
           </figure>
-
           <footer className="highlight__footer">
             <div className="followers__wrapper">
-            <span className="highlight__followers">
-              {followers} followers
-            </span>
-            <span className="highlight__following">
-              {following} following
-            </span>
+              <span className="highlight__followers">
+                <PeopleIcon></PeopleIcon>
+                {followers} followers - {following} following
+              </span>
             </div>
             <span className="highlight__location">
               <LocationOnIcon></LocationOnIcon>
               {location}
             </span>
             <span className="highlight__email">
-              <MarkunreadIcon /> lorellana.ordonez@gmail.com
+              <MarkunreadIcon /> {email}
             </span>
           </footer>
         </article>
@@ -65,5 +77,4 @@ const User: React.FC<UserData> = ({name, login, bio, avatar_url, location, follo
     </>
   );
 };
-
 export default User;
