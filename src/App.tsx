@@ -17,7 +17,6 @@ const App = () => {
   useEffect(() => {
     getApiData().then((reposData) => {
       setRepos(reposData);
-      console.log(reposData);
     });
   }, []);
 
@@ -29,7 +28,7 @@ const App = () => {
   const filteredRepos = reposData.filter((repo) => {
     return repo.name.toLowerCase().includes(filter.toLowerCase());
   })
-  console.log(filteredRepos)
+  // console.log(filteredRepos)
 
   return (
     <>
@@ -38,8 +37,8 @@ const App = () => {
         </header>
         <main>
           <User {...userData} />
-          <Filter handleFilter={handleFilter}></Filter>
-          <RepoList {...filteredRepos}></RepoList> 
+          {/* <Filter handleFilter={handleFilter}></Filter> */}
+          {/* <RepoList {...filteredRepos}></RepoList>  */}
         </main>
       </div>
     </>

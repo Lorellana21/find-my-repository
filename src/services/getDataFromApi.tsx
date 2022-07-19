@@ -19,4 +19,3 @@ async function getDataFromApi() {
 }
 
 export default getDataFromApi;
-//https://api.github.com/users/Lorellana21/repos
