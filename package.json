@@ -1,7 +1,7 @@
 {
   "name": "find-my-repository",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "https://github.com/Lorellana21/find-my-repository",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
